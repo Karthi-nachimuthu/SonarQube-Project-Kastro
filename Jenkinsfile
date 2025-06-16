@@ -35,7 +35,7 @@ pipeline {
         stage('Sonar Analysis') {
             steps {
                 withSonarQubeEnv('sonar-server') {
-                    sh "$SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Kastro -Dsonar.projectKey=KastroKey -Dsonar.java.binaries=target"
+                    sh "$SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Karthi -Dsonar.projectKey=KarthiKey -Dsonar.java.binaries=target"
                 }
             }
         }
